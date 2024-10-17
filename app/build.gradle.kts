@@ -29,10 +29,18 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    sourceSets {
+        getByName("main") {
+            assets {
+                srcDirs("src/main/assets")
+            }
+        }
+    }
 }
 
 dependencies {
-
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("com.karumi:dexter:6.2.3")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
