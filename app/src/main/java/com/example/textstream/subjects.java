@@ -1,13 +1,21 @@
 package com.example.textstream;
 
+import android.app.AlarmManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -18,6 +26,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import org.w3c.dom.Text;
+
+import java.util.Calendar;
 
 public class subjects extends AppCompatActivity {
     @Override
@@ -64,6 +74,9 @@ public class subjects extends AppCompatActivity {
                 editor.apply();
             }
         });
+
+
+
 
     }
 }

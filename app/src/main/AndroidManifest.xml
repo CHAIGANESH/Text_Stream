@@ -17,26 +17,16 @@
         android:theme="@style/Theme.TextStream"
         tools:targetApi="31">
         <activity
-            android:name=".subjects"
-            android:exported="false" />
-        <activity
-            android:name=".gt"
-            android:exported="false" />
-        <activity
             android:name=".ReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".subjects"
             android:exported="false" />
         <activity
             android:name=".PdfActivity"
             android:exported="false" />
+        <receiver android:name=".ReminderReceiver" />
 
-        <receiver android:name=".NotificationReceiver" />
-
-        <activity
-            android:name=".cn"
-            android:exported="false" />
-        <activity
-            android:name=".os"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -47,5 +37,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
 
 </manifest>
