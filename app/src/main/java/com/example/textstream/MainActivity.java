@@ -1,4 +1,5 @@
 package com.example.textstream;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
         searchView = findViewById(R.id.searchView);
         recyclerView = findViewById(R.id.recyclerView);
 
-        // Set up RecyclerView
+        // Set up block list and RecyclerView
         blockList = new ArrayList<>();
-        blockList.add(new BlockItem("Operating Systems", os.class)); // Example
-        blockList.add(new BlockItem("Computer Networks", cn.class)); // Example
-
+        blockList.add(new BlockItem("Operating Systems", subjects.class, getString(R.string.os_obj), "os_notes", getString(R.string.os_book)));
+        blockList.add(new BlockItem("Computer Networks", subjects.class, getString(R.string.cn_obj), "cn_notes", getString(R.string.cn_book)));
+        blockList.add(new BlockItem("Graph Theory", subjects.class, getString(R.string.gt_obj), "gt_notes", getString(R.string.gt_book)));
+        blockList.add(new BlockItem("Web Technologies", subjects.class, getString(R.string.wt_obj), "wt_notes", getString(R.string.wt_book)));
+        blockList.add(new BlockItem("Compiler Engineering", subjects.class, getString(R.string.ce_obj), "ce_notes", getString(R.string.ce_book)));
         blockAdapter = new BlockAdapter(blockList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(blockAdapter);
@@ -47,6 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
+
 }

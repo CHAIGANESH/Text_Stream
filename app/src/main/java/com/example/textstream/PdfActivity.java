@@ -18,9 +18,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
 public class PdfActivity extends AppCompatActivity {
-
     private PdfRenderer pdfRenderer;
     private PdfRenderer.Page currentPage;
     private ParcelFileDescriptor parcelFileDescriptor;
@@ -39,7 +37,7 @@ public class PdfActivity extends AppCompatActivity {
         pageNumberInput = findViewById(R.id.pageNumberInput);
         searchButton = findViewById(R.id.searchButton);
         Intent intent = getIntent();
-        String bookname = intent.getStringExtra("osbook");
+        String bookname = intent.getStringExtra("book");
         try {
             openRenderer(bookname);  // Load PDF from assets
             showPage(currentPageIndex);  // Show the first page

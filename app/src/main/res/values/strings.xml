@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">TextStream</string>
+    <string name="os_obj">Objectives\n
+1.Understand the fundamental concepts of operating systems, including process and thread management, scheduling mechanisms, and memory management strategies.\n
+2.Explore emerging trends and advancements in operating systems.</string>
+    <string name="cn_obj">Objectives\n
+1.Understand network layering, TCP/IP protocols, and end-to-end data flow.\n
+2.Learn about network components, addressing, and routing.</string>
+    <string name="gt_obj">Objectives\n
+1.To comprehend graphs as modeling and analysis tools.\n
+2.To introduce various data structures with graph theory.\n
+    3.To learn graph theoretic algorithms.\n
+    4.To understand graph coloring and covering.\n
+    5.To learn the usage and applications of graphs in social networking and media.</string>
+    <string name="wt_obj">Objectives\n
+1.To learn the basic object oriented concepts using Java language.\n
+2.To understand the advanced features of Java language.\n
+    3.To understand the essential client side technologies for web programming.\n
+    4.To develop applications using database connectivity and server side programming in
+Java environment.\n
+    5.To develop smart device based web application and deploy in different platforms.</string>
+    <string name="ce_obj">Objectives\n
+1.To learn about automata theory and regular expressions.\n
+2.To learn the concepts in the design of compilers.\n
+    3.To learn about the runtime store organization.\n
+    4.To know the data structures used to implement symbol tables.\n
+    5.To be familiar with garbage collection.</string>
+    <string name="os_book">Operating Systems.pdf</string>
+    <string name="cn_book">Computer Networks.pdf</string>
+    <string name="gt_book">Graph Theory.pdf</string>
+    <string name="wt_book">Web Technologies.pdf</string>
+    <string name="ce_book">Compiler Engineering.pdf</string>
 </resources>

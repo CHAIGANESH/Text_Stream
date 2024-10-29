@@ -34,6 +34,10 @@ public class BlockAdapter extends RecyclerView.Adapter<BlockAdapter.BlockViewHol
         holder.itemView.setOnClickListener(v -> {
             // Launch the associated activity
             Intent intent = new Intent(v.getContext(), block.getActivityClass());
+            intent.putExtra("title", block.getTitle());
+            intent.putExtra("objectives", block.getObjectives());
+            intent.putExtra("notes", block.getNotes());
+            intent.putExtra("book", block.getBook());
             v.getContext().startActivity(intent);
         });
     }
