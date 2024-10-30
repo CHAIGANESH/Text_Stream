@@ -75,6 +75,15 @@ public class subjects extends AppCompatActivity {
             }
         });
 
+        Button openRecordingPageButton = findViewById(R.id.openRecordingPageButton);
+        openRecordingPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(subjects.this, RecordingActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

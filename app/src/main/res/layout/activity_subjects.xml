@@ -67,5 +67,15 @@
         android:onClick="savenotes"
         android:text="Save Notes" />
 
+    <!-- Button to go to Recording Page -->
+    <Button
+        android:id="@+id/openRecordingPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveNotesButton"
+        android:layout_marginTop="20dp"
+        android:text="Add Voice Note" />
+
+
 
 </RelativeLayout>

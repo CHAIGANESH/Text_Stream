@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/recordingNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter recording name"
+        android:inputType="text" />
+    <!-- Button to Start Recording -->
+    <Button
+        android:id="@+id/startRecordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Start Recording" />
+
+    <!-- Button to Stop Recording -->
+    <Button
+        android:id="@+id/stopRecordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startRecordingButton"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:text="Stop Recording" />
+
+    <!-- Button to Play Recorded Audio -->
+
+    <Button
+        android:id="@+id/playRecordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopRecordingButton"
+        android:layout_marginTop="16dp"
+        android:text="Play Recording"
+        android:enabled="false" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recordingListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playRecordingButton"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>

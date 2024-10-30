@@ -5,6 +5,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
 
     <application
         android:allowBackup="true"
@@ -17,6 +21,9 @@
         android:theme="@style/Theme.TextStream"
         tools:targetApi="31">
         <activity
+            android:name=".RecordingActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReminderActivity"
             android:exported="false" />
         <activity
@@ -25,6 +32,7 @@
         <activity
             android:name=".PdfActivity"
             android:exported="false" />
+
         <receiver android:name=".ReminderReceiver" />
 
         <activity
@@ -37,8 +45,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
-
 
 </manifest>
