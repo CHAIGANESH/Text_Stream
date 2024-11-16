@@ -11,14 +11,15 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven ( url ="https://repository.liferay.com/nexus/content/repositories/public/" )
     }
 }
 
 rootProject.name = "TextStream"
 include(":app")
- 

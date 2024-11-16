@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         blockList.add(new BlockItem("Graph Theory", subjects.class, getString(R.string.gt_obj), "gt_notes", getString(R.string.gt_book)));
         blockList.add(new BlockItem("Web Technologies", subjects.class, getString(R.string.wt_obj), "wt_notes", getString(R.string.wt_book)));
         blockList.add(new BlockItem("Compiler Engineering", subjects.class, getString(R.string.ce_obj), "ce_notes", getString(R.string.ce_book)));
+        blockList.add(new BlockItem("Compiler Engineering", subjects.class, getString(R.string.ce_obj), "ce_notes", getString(R.string.ce_book)));
         blockAdapter = new BlockAdapter(blockList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(blockAdapter);
