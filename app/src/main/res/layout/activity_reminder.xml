@@ -1,25 +1,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
-
-    <Button
-        android:id="@+id/selectTimeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Select Time" />
+    android:padding="16dp"
+    android:background="#FFFFFF">
 
     <EditText
         android:id="@+id/reminderText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:hint="Enter your reminder text"
         android:inputType="textMultiLine"
         android:minHeight="100dp"
-        android:padding="10dp" />
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textColorHint="#757575"
+        android:backgroundTint="#F1F1F1" />
+
+    <Button
+        android:id="@+id/selectTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reminderText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Select Time"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="@style/CustomButtonStyle" />
 
     <Button
         android:id="@+id/saveReminderButton"
@@ -27,6 +38,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/selectTimeButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
-        android:text="Save Reminder" />
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Save Reminder"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="@style/CustomButtonStyle" />
+
 </RelativeLayout>
