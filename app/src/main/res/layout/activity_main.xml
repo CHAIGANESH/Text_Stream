@@ -14,10 +14,10 @@
         android:layout_height="50dp"
         android:layout_margin="16dp"
         android:background="@drawable/rounded_search_view"
+        android:backgroundTint="@color/searchview_blue"
         android:inputType="text"
         app:iconifiedByDefault="false"
-        app:queryHint="Search tasks..."
-        android:backgroundTint="@color/searchview_blue" /> <!-- Updated background color -->
+        app:queryHint="Search tasks..." /> <!-- Updated background color -->
 
     <!-- RecyclerView with consistent margins -->
     <androidx.recyclerview.widget.RecyclerView

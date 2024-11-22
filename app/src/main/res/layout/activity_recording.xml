@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#FFFFFF">
 
     <EditText
         android:id="@+id/recordingNameEditText"
@@ -9,26 +10,39 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Enter recording name"
-        android:inputType="text" />
-    <!-- Button to Start Recording -->
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textColorHint="#757575"
+        android:backgroundTint="#F1F1F1" />
+
     <Button
         android:id="@+id/startRecordingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:text="Start Recording" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="Start Recording"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="@style/CustomButtonStyle" />
 
-    <!-- Button to Stop Recording -->
     <Button
         android:id="@+id/stopRecordingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/startRecordingButton"
         android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:enabled="false"
-        android:text="Stop Recording" />
-
-    <!-- Button to Play Recorded Audio -->
+        android:background="@drawable/rounded_button"
+        android:text="Stop Recording"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="@style/CustomButtonStyle" />
 
     <Button
         android:id="@+id/playRecordingButton"
@@ -36,14 +50,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/stopRecordingButton"
         android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:background="@drawable/rounded_button"
         android:text="Play Recording"
-        android:enabled="false" />
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        style="@style/CustomButtonStyle" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recordingListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/playRecordingButton"
         android:layout_marginTop="20dp" />
-
 
 </RelativeLayout>
