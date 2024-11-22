@@ -38,6 +38,7 @@ public class BlockAdapter extends RecyclerView.Adapter<BlockAdapter.BlockViewHol
             intent.putExtra("objectives", block.getObjectives());
             intent.putExtra("notes", block.getNotes());
             intent.putExtra("book", block.getBook());
+            intent.putExtra("bookbutton", block.getBookbutton());
             v.getContext().startActivity(intent);
         });
     }

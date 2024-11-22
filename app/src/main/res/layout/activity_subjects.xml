@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".subjects">
 
     <TextView
@@ -14,26 +14,26 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:padding="16dp"
-        android:textColor="@android:color/white"
+        android:text="Download Text Book"
+        android:textColor="#000000"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/objectives"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/titleTextView"
+        android:layout_below="@id/titleTextView"
         android:layout_marginTop="36dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="42dp" />
+        android:textColor="#666666"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:id="@+id/blockLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/objectives"
+        android:layout_below="@id/objectives"
         android:layout_marginTop="44dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="#3F51B5"
         android:gravity="center"
         android:padding="16dp">
 
@@ -42,10 +42,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Operating Systems"
-            android:textColor="@android:color/white" />
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
-    <!-- New EditText for Notes -->
     <EditText
         android:id="@+id/notesEditText"
         android:layout_width="match_parent"
@@ -55,27 +56,42 @@
         android:hint="Write your notes here..."
         android:inputType="textMultiLine"
         android:minHeight="100dp"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:background="#F1F1F1"
+        android:textColor="#000000" />
 
-    <!-- New Button to Save Notes -->
-    <Button
-        android:id="@+id/saveNotesButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/notesEditText"
-        android:layout_marginTop="10dp"
-        android:onClick="savenotes"
-        android:text="Save Notes" />
-
-    <!-- Button to go to Recording Page -->
-    <Button
-        android:id="@+id/openRecordingPageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/saveNotesButton"
         android:layout_marginTop="20dp"
-        android:text="Add Voice Note" />
+        android:gravity="center"
+        android:padding="10dp">
 
+        <Button
+            android:id="@+id/saveNotesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_button"
+            style="@style/CustomButtonStyle"
+            android:text="Save Your Notes"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
+        <Button
+            android:id="@+id/openRecordingPageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/CustomButtonStyle"
+            android:background="@drawable/rounded_button"
+            android:text="Add Voice Note"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

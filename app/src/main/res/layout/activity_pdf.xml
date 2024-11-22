@@ -1,37 +1,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <!-- PDFView to display the PDF -->
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
-    <!-- Input field to enter page number -->
+    <!-- Hidden Input field to enter page number (initially invisible) -->
     <EditText
         android:id="@+id/pageNumberInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:alpha="1.0"
-        android:backgroundTint="#E2DDDD"
         android:hint="Page Number"
+        android:visibility="gone"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
         android:inputType="number"
-        android:padding="10dp"
-        android:textColor="#880E4F"/>
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textColorHint="#757575" />
 
-    <!-- Button to search for a page -->
+    <!-- Button to perform the search (initially hidden) -->
     <Button
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
         android:layout_toEndOf="@id/pageNumberInput"
-        android:text="Go" />
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/rounded_button"
+        style="@style/CustomButtonStyle"
+        android:visibility="gone"
+        android:text="Go"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Floating Action Button (FAB) -->
+    <ImageButton
+        android:id="@+id/fabSearch"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/fab_background"
+        android:src="@drawable/ic_search"
+        android:contentDescription="Search"
+        android:elevation="8dp" />
 
 </RelativeLayout>

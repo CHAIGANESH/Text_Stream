@@ -41,18 +41,17 @@ public class subjects extends AppCompatActivity {
         String objectives = intent.getStringExtra("objectives");
         String notes = intent.getStringExtra("notes");
         String book=intent.getStringExtra("book");
+        String bookbutton=intent.getStringExtra("bookbutton");
         SharedPreferences sharedPreferences = getSharedPreferences("Notes", MODE_PRIVATE);
         TextView tit=findViewById(R.id.titleTextView);
         tit.setText(title);
 
         TextView sampleTextView = findViewById(R.id.objectives);
-        Typeface typeface = ResourcesCompat.getFont(this, R.font.myfont);
-        sampleTextView.setTypeface(typeface);
         sampleTextView.setText(objectives);
 
         View pdf = findViewById(R.id.blockLayout);
         TextView pdfbutton=findViewById(R.id.osclick);
-        pdfbutton.setText(title);
+        pdfbutton.setText(bookbutton);
         pdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

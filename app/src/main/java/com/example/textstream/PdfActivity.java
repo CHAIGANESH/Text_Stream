@@ -2,8 +2,10 @@ package com.example.textstream;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +15,8 @@ public class PdfActivity extends AppCompatActivity {
 
     private PDFView pdfView;
     private EditText pageNumberInput;
+    private Button searchButton;
+    private ImageButton fabSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +25,12 @@ public class PdfActivity extends AppCompatActivity {
 
         pdfView = findViewById(R.id.pdfView);
         pageNumberInput = findViewById(R.id.pageNumberInput);
-        Button searchButton = findViewById(R.id.searchButton);
+        searchButton = findViewById(R.id.searchButton);
+        fabSearch = findViewById(R.id.fabSearch);
+
+        // Initially hide the page number input and search button
+        pageNumberInput.setVisibility(View.GONE);
+        searchButton.setVisibility(View.GONE);
 
         // Get the book name passed from the previous activity
         Intent intent = getIntent();
@@ -35,6 +44,17 @@ public class PdfActivity extends AppCompatActivity {
                 .enableAnnotationRendering(true) // Render annotations (e.g., comments, highlights)
                 .defaultPage(0) // Open at the first page
                 .load();
+
+        // Toggle visibility of input and button when FAB is clicked
+        fabSearch.setOnClickListener(v -> {
+            if (pageNumberInput.getVisibility() == View.GONE) {
+                pageNumberInput.setVisibility(View.VISIBLE);
+                searchButton.setVisibility(View.VISIBLE);
+            } else {
+                pageNumberInput.setVisibility(View.GONE);
+                searchButton.setVisibility(View.GONE);
+            }
+        });
 
         // Search for a specific page
         searchButton.setOnClickListener(v -> {

@@ -6,11 +6,13 @@ public class BlockItem {
     private String objectives; // Additional string example
     private String notes; // Another additional string
     private String book;
-    public BlockItem(String title, Class<?> activityClass, String objectives, String notes,String book) {
+    private String bookbutton;
+    public BlockItem(String title, String bb, Class<?> activityClass, String objectives, String notes,String book) {
         this.title = title;
         this.activityClass = activityClass;
         this.objectives = objectives;
         this.notes = notes;
+        this.bookbutton = bb;
         this.book=book;
     }
 
@@ -31,5 +33,8 @@ public class BlockItem {
     }
     public String getBook() {
         return book;
+    }
+    public String getBookbutton() {
+        return bookbutton;
     }
 }

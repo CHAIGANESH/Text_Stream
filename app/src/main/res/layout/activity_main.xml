@@ -1,43 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3F4F6"
     tools:context=".MainActivity">
 
+    <!-- Styled SearchView with updated blue -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
-        android:background="#69ACE2"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_search_view"
         android:inputType="text"
         app:iconifiedByDefault="false"
-        app:queryHint="Search..." />
+        app:queryHint="Search tasks..."
+        android:backgroundTint="@color/searchview_blue" /> <!-- Updated background color -->
 
+    <!-- RecyclerView with consistent margins -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:layout_below="@id/searchView"
         android:layout_above="@id/setReminderButton"
-        app:layout_constraintTop_toBottomOf="@id/searchView" />
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_recycler_view"
+        android:elevation="2dp" />
 
+    <!-- Styled Button with updated blue color -->
     <Button
         android:id="@+id/setReminderButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginLeft="115dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="15dp"
-        android:text="Set Task Reminder" />
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button"
+        android:padding="12dp"
+        style="@style/CustomButtonStyle"
+        android:text="Set Task Reminder"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
 </RelativeLayout>
