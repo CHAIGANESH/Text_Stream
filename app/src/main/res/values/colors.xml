@@ -1,6 +1,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color>
     <color name="button_blue">#1976D2</color> <!-- Adjusted blue color -->
     <color name="searchview_blue">#1976D2</color> <!-- Adjusted blue for SearchView -->
 </resources>
