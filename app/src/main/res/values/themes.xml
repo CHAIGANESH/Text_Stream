@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.TextStream" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Base application theme for Light Mode -->
+    <style name="Base.Theme.TextStream" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/my_blue_primary</item>
+        <item name="colorPrimaryContainer">@color/my_blue_primary_container</item>
+        <item name="colorSecondary">@color/my_blue_secondary</item>
+        <item name="colorSecondaryContainer">@color/my_blue_secondary_container</item>
+
+        <!-- Global Background and Surface Colors -->
+        <item name="backgroundColor">#F3F4F6</item>
+        <item name="colorSurface">@color/my_blue_surface</item>
+
+        <!-- Text Colors (Default to black) -->
+        <item name="android:textColor">@android:color/black</item> <!-- Default text color is black -->
+
+        <!-- Status Bar Color -->
+        <item name="android:statusBarColor">@color/my_blue_primary</item>
     </style>
 
     <style name="Theme.TextStream" parent="Base.Theme.TextStream" />

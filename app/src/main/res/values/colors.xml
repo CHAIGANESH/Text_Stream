@@ -4,4 +4,20 @@
     <color name="blue">#2196F3</color>
     <color name="button_blue">#1976D2</color> <!-- Adjusted blue color -->
     <color name="searchview_blue">#1976D2</color> <!-- Adjusted blue for SearchView -->
+    <color name="my_blue_primary">#2196F3</color>
+    <color name="my_blue_primary_container">#BBDEFB</color>
+    <color name="my_blue_secondary">#03A9F4</color>
+    <color name="my_blue_secondary_container">#B3E5FC</color>
+    <color name="my_blue_tertiary">#0288D1</color>
+    <color name="my_blue_tertiary_container">#81D4FA</color>
+    <color name="my_blue_surface">#E3F2FD</color>
+    <color name="my_blue_on_surface">#0D47A1</color>
+    <color name="my_blue_background">#E3F2FD</color>
+    <color name="my_blue_on_background">#0D47A1</color>
+    <color name="my_blue_primary_dark">#0D47A1</color> <!-- Darker blue for primary -->
+    <color name="my_blue_primary_container_dark">#1565C0</color> <!-- Darker primary container -->
+    <color name="my_blue_secondary_dark">#0288D1</color> <!-- Darker blue for secondary -->
+    <color name="my_blue_secondary_container_dark">#0288D1</color> <!-- Darker secondary container -->
+    <color name="my_blue_surface_dark">#121212</color> <!-- Dark surface background -->
+    <color name="my_blue_background_dark">#121212</color>
 </resources>

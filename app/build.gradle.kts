@@ -44,6 +44,7 @@ dependencies {
     implementation ("com.karumi:dexter:6.2.3")
     implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.1")
     implementation ("com.google.firebase:firebase-firestore:24.4.3")
+    implementation ("com.google.android.material:material:1.9.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

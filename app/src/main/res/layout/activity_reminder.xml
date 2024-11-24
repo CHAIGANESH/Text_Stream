@@ -1,14 +1,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="#FFFFFF">
 
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/my_blue_primary"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentTop="true">
+
+        <!-- App Name TextView -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextStream"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Reminder Text EditText -->
     <EditText
         android:id="@+id/reminderText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:hint="Enter your reminder text"
         android:inputType="textMultiLine"
         android:minHeight="100dp"
@@ -19,6 +41,7 @@
         android:textColorHint="#757575"
         android:backgroundTint="#F1F1F1" />
 
+    <!-- Select Time Button -->
     <Button
         android:id="@+id/selectTimeButton"
         android:layout_width="wrap_content"
@@ -32,6 +55,7 @@
         android:textSize="16sp"
         style="@style/CustomButtonStyle" />
 
+    <!-- Save Reminder Button -->
     <Button
         android:id="@+id/saveReminderButton"
         android:layout_width="wrap_content"
