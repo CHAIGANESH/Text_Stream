@@ -7,32 +7,60 @@
     android:background="#FFFFFF"
     tools:context=".subjects">
 
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/my_blue_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TextStream"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Title Text -->
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:padding="16dp"
+        android:padding="8dp"
         android:text="Download Text Book"
         android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
+    <!-- Objectives Text -->
     <TextView
         android:id="@+id/objectives"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleTextView"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Objectives go here..."
         android:textColor="#666666"
         android:textSize="18sp" />
 
+    <!-- Block Layout -->
     <LinearLayout
         android:id="@+id/blockLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/objectives"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:background="#1976D2"
         android:gravity="center"
         android:padding="16dp">
@@ -44,15 +72,15 @@
             android:text="Operating Systems"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
-
     </LinearLayout>
 
+    <!-- Notes EditText -->
     <EditText
         android:id="@+id/notesEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/blockLayout"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:hint="Write your notes here..."
         android:inputType="textMultiLine"
         android:minHeight="100dp"
@@ -60,15 +88,16 @@
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#F1F1F1"
         android:textColor="#000000"
-        android:textColorHint="#757575"/>
+        android:textColorHint="#757575" />
 
+    <!-- Button Layout -->
     <LinearLayout
         android:id="@+id/buttonLayout"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/notesEditText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:padding="10dp">
 
@@ -96,6 +125,7 @@
             android:textSize="16sp" />
     </LinearLayout>
 
+    <!-- Watch Video Button -->
     <Button
         android:id="@+id/videoaccess"
         android:layout_width="wrap_content"
