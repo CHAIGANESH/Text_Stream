@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881424838935",
+    "project_id": "textstream-base",
+    "storage_bucket": "textstream-base.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881424838935:android:7eea7e9e70e1e1f6d10752",
+        "android_client_info": {
+          "package_name": "com.example.textstream"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYhJhtoQmPo2LtAQafpluiavMbojLrLZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

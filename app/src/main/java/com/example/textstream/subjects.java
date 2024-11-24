@@ -83,6 +83,16 @@ public class subjects extends AppCompatActivity {
             }
         });
 
+        Button video=findViewById(R.id.videoaccess);
+        video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect to ReminderActivity
+                Intent vi=new Intent(subjects.this, VideoActivity.class);
+                vi.putExtra("subj",title);
+                startActivity(vi);
+            }
+        });
 
 
 

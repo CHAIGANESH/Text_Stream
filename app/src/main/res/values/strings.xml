@@ -25,9 +25,28 @@ Java environment.\n
     3.To learn about the runtime store organization.\n
     4.To know the data structures used to implement symbol tables.\n
     5.To be familiar with garbage collection.</string>
+    <string name="adb_obj">Objectives\n
+1.To learn the fundamentals of data modeling and design in advanced databases.
+2.To study the working principles of distributed databases.
+3.To have an introductory knowledge about the query processing in object-based
+databases and its usage.
+4.To understand the basics of spatial, temporal and mobile databases and their
+applications.
+5.To learn emerging databases such as XML, Data warehouse and NoSQL.</string>
+    <string name="dld_obj">Objectives\n
+1.To learn Boolean algebra and simplification of Boolean functions.
+2.To learn to design and analyze different combinational circuits.
+3.To study the basics of synchronous sequential logic, analyze and design sequential
+circuits.
+4.To learn about basic memory devices and programmable logic devices to build
+simple digital systems.
+5.To learn to write code in Hardware Definition Language for designing larger digital
+systems.</string>
     <string name="os_book">Operating Systems.pdf</string>
     <string name="cn_book">Computer Networks.pdf</string>
     <string name="gt_book">Graph Theory.pdf</string>
     <string name="wt_book">Web Technologies.pdf</string>
     <string name="ce_book">Compiler Engineering.pdf</string>
+    <string name="adb_book">Advances in Database.pdf</string>
+    <string name="dld_book">dld.pdf</string>
 </resources>
