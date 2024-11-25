@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         blockList.add(new BlockItem("Compiler Engineering","Open Text Book", subjects.class, getString(R.string.ce_obj), "ce_notes", getString(R.string.ce_book)));
         blockList.add(new BlockItem("Advances in Databases","Open Text Book", subjects.class, getString(R.string.adb_obj), "adb_notes", getString(R.string.adb_book)));
         blockList.add(new BlockItem("Digital Logic and Design","Open Text Book", subjects.class, getString(R.string.dld_obj), "dld_notes", getString(R.string.dld_book)));
+        blockList.add(new BlockItem("Programming and Data Structures","Open Text Book", subjects.class, getString(R.string.pds_obj), "pds_notes", getString(R.string.pds_book)));
+        blockList.add(new BlockItem("Database Management Systems","Open Text Book", subjects.class, getString(R.string.dbms_obj), "dbms_notes", getString(R.string.dbms_book)));
+        blockList.add(new BlockItem("OOPS and ADS","Open Text Book", subjects.class, getString(R.string.oops_obj), "oops_notes", getString(R.string.oops_book)));
+
 
         blockAdapter = new BlockAdapter(blockList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

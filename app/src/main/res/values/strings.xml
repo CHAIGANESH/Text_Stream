@@ -42,6 +42,32 @@ circuits.
 simple digital systems.
 5.To learn to write code in Hardware Definition Language for designing larger digital
 systems.</string>
+    <string name="pds_obj">Objectives\n
+1.To introduce the basics of C programming language.
+2.To learn the concepts of advanced features of C.
+3.To understand the concepts of ADTs and linear data structures.
+4.To know the concepts of non-linear data structure and hashing.
+5.To familiarize the concepts of sorting and searching techniques.
+systems.</string>
+    <string name="dbms_obj">Objectives\n
+1.To learn the fundamentals of data models, conceptualize and depict a database
+system using ER diagram.
+2.To study the principles to be followed to create an effective relational database and
+write SQL queries to store/retrieve data to/from database systems.
+3.To know the fundamental concepts of transaction processing, concurrency control
+techniques and recovery procedure.
+4.To learn about the internal storage structures using different file and indexing
+techniques and the basics of query processing and optimization.
+5.To study the basics of distributed databases, semi-structured and un-structured data
+models.</string>
+    <string name="oops_obj">Objectives\n
+1.To introduce basic concepts and advanced features of Object Oriented
+Programming.
+2.To learn and implement different data structures using object oriented
+concepts.
+3.To learn about non-linear data structures.
+4.To familiarize with graph and graph-related algorithms.
+5.To learn about the applications of graphs for real world problem solving.</string>
     <string name="os_book">Operating Systems.pdf</string>
     <string name="cn_book">Computer Networks.pdf</string>
     <string name="gt_book">Graph Theory.pdf</string>
@@ -49,4 +75,7 @@ systems.</string>
     <string name="ce_book">Compiler Engineering.pdf</string>
     <string name="adb_book">Advances in Database.pdf</string>
     <string name="dld_book">dld.pdf</string>
+    <string name="pds_book">pds.pdf</string>
+    <string name="dbms_book">dbms.pdf</string>
+    <string name="oops_book">oops.pdf</string>
 </resources>
